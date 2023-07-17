@@ -33,7 +33,7 @@ rm -rf ./${QT_VERSION}/mingw73_64/bin && mv ./${QT_VERSION}/mingw73_64/_bin ./${
 find . -type f -name "*d.dll*" -exec sh -c 'test -e $(echo {} | sed -e "s/d\./\./g") && rm -rf {}' \;
 find . -type f -name "*d.a" -exec sh -c 'test -e $(echo {} | sed -e "s/d\./\./g") && rm -rf {}' \;
 
-echo "module github.com/therecipe/env_windows_amd64_513/Tools" > ./Tools/go.mod
+echo "module github.com/akiyosi/env_windows_amd64_513/Tools" > ./Tools/go.mod
 echo "package Tools" > ./Tools/mod.go
 
 set +e
